@@ -13,6 +13,28 @@ Big screen: 1200px and up
 */
 /*Print*/
 @media print{
+
+    body{
+        background-image: url(../imagens/back-print.jpg); /*unnecessary*/
+       
+    }
+    #tel {display: none;}
+    #tab{display: none;}
+    #pc{display: none;}
+    #imp{display: block;}
+    #tv{display: none;}
+
+    h1{
+        font-family: 'Courier New', Courier, monospace;
+        text-shadow: none;
+        color: black;
+
+    }
+
+    main{
+
+        border: 2px solid black;
+    }
     
 }
 
@@ -21,14 +43,45 @@ Big screen: 1200px and up
 
     body {
         background-image: url(../imagens/back-tablet.jpg);
+
+        
     }
+    #tel {display: none;}
+    #tab{display: block;}
+    #pc{display: none;}
+    #imp{display: none;}
+    #tv{display: none;}
     
 }
 /* Desktop*/
 @media screen and (min-width: 992px) and (max-width: 1200px){
 
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    
+    #tel {display: none;}
+    #tab{display: none;}
+    #pc{display: block;}
+    #imp{display: none;}
+    #tv{display: none;}
+
 }
 /* Big Screen*/
 @media screen and (min-width: 1200px){
 
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    #tel {display: none;}
+    #tab{display: none;}
+    #pc{display: none;}
+    #imp{display: none;}
+    #tv{display: block;}
+
+    main{
+
+        width: 700px;
+    }
 }
